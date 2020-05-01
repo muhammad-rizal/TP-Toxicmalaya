@@ -50,5 +50,4 @@ function clickTile(row,column) {
          }
        } 
   }
-  
 }
