@@ -1,0 +1,21 @@
+#card {
+        background: black;
+        border: 2px solid white;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 180px;
+        margin: 23rem auto 8.1rem auto;
+        width: 330px;
+
+	}
+
+#card-content {
+      padding: 12px 44px;
+}
+#card-title {
+      font-family: "Raleway Thin", sans-serif;
+      letter-spacing: 4px;
+      padding-bottom: 23px;
+      padding-top: 13px;
+      text-align: center;
+}
