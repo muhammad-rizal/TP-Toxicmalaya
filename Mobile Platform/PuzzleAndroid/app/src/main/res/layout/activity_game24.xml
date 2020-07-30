@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ToggleButton
+            android:id="@+id/sfx"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="sfxclick"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/sfxon"/>
+
+        <ToggleButton
+            android:id="@+id/music"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="musicclick"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/musicon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/record" />
+
+            <TextView
+                android:id="@+id/tScore"
+                style="@style/textGameStyle24"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:textSize="@dimen/textScore24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tBestScore"
+                style="@style/textGameStyle24"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:textSize="@dimen/textBestScore24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gameback">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:columnCount="5"
+                android:rowCount="5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/b2400"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2401"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2402"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2403"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2404"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2410"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2411"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2412"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2413"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2414"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="1"
+                    android:layout_column="4"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2420"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2421"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2422"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2423"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="2"
+                    android:layout_column="3"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2424"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="2"
+                    android:layout_column="4"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2430"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2431"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2432"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2433"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="3"
+                    android:layout_column="3"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2434"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="3"
+                    android:layout_column="4"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2440"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2441"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2442"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2443"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="4"
+                    android:layout_column="3"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:layout_marginEnd="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+
+                <ImageButton
+                    android:id="@+id/b2444"
+                    style="@style/gridBGameStyle24"
+                    android:layout_row="4"
+                    android:layout_column="4"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:contentDescription="@string/button" />
+            </GridLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gameback"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/hasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/acak"
+                android:layout_width="95dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/acakbtn"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/homebtn"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/acak" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>
