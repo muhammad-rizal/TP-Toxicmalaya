@@ -18,6 +18,6 @@ Game puzzle berbasis Mobile dan Web dengan mode 3x3, 4x4, dan 5x5.
 
 ## Link
 * **Web Platform** - [Cartoon Puzzle](https://crippled-ditches.000webhostapp.com/)
-* **Mobile Platform** - File APK ada di Github
+* **Mobile Platform** - [Download](https://mega.nz/file/oYoxHKxA#_IjenLoU52Eug06o5r299CbBgFHEzO-yx7qnzrcCLIY)
 
 ## Running the tests
