@@ -1,0 +1,22 @@
+{
+    "menu": [
+        {
+            "nama": "We Bare Bears",
+            "gambar": "satu.png",
+            "komen" : "Game puzzle dengan gambar kartun We Bare Bears",
+            "kode" : "1"
+        },
+        {
+            "nama": "Adventure Time",
+            "gambar": "dua.png",
+            "komen" : "Game puzzle dengan gambar kartun Adventure Time",
+            "kode" : "2"
+        },
+        {
+            "nama": "Spongebob Squarepants",
+            "gambar": "tiga.png",
+            "komen" : "Game puzzle dengan gambar kartun Spongebob Squarepants",
+            "kode" : "3"
+        }
+    ]
+}
